@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Mocambo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .full-menu-page {
+            min-height: 100vh;
+            padding: 140px 8vw 100px;
+            background: var(--cream);
+            color: var(--deep-wine);
+        }
+
+        .menu-page-header {
+            max-width: 850px;
+            margin-bottom: 100px;
+        }
+
+        .menu-page-header h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(70px, 10vw, 140px);
+            font-weight: 500;
+            line-height: 0.8;
+        }
+
+        .menu-page-header h1 em {
+            color: var(--wine);
+            font-style: italic;
+        }
+
+        .menu-page-header p {
+            max-width: 500px;
+            margin-top: 35px;
+
+            font-size: 14px;
+            line-height: 1.8;
+
+            color: rgba(58, 5, 12, 0.65);
+        }
+
+        .menu-category {
+            margin-bottom: 90px;
+        }
+
+        .menu-category-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+
+            padding-bottom: 18px;
+            margin-bottom: 10px;
+
+            border-bottom: 1px solid rgba(58, 5, 12, 0.25);
+        }
+
+        .menu-category-header h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 48px;
+            font-weight: 500;
+        }
+
+        .menu-category-header span {
+            color: var(--gold);
+            font-size: 9px;
+            letter-spacing: 2px;
+        }
+
+        .menu-row {
+            display: grid;
+            grid-template-columns: 70px 1fr auto;
+            gap: 25px;
+
+            align-items: center;
+
+            min-height: 85px;
+
+            border-bottom: 1px solid rgba(58, 5, 12, 0.12);
+        }
+
+        .menu-row-number {
+            color: var(--gold);
+            font-size: 9px;
+            letter-spacing: 2px;
+        }
+
+        .menu-row h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 27px;
+            font-weight: 500;
+        }
+
+        .menu-row p {
+            margin-top: 4px;
+
+            font-size: 11px;
+            line-height: 1.5;
+
+            color: rgba(23, 21, 22, 0.55);
+        }
+
+        .menu-row-price {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 21px;
+            color: var(--wine);
+        }
+
+        .menu-page-back {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding-bottom: 7px;
+
+            border-bottom: 1px solid var(--wine);
+
+            color: var(--wine);
+
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 800px) {
+
+            .full-menu-page {
+                padding: 110px 7vw 70px;
+            }
+
+            .menu-page-header {
+                margin-bottom: 70px;
+            }
+
+            .menu-category {
+                margin-bottom: 65px;
+            }
+
+            .menu-category-header h2 {
+                font-size: 38px;
+            }
+
+            .menu-row {
+                grid-template-columns: 35px 1fr auto;
+                gap: 12px;
+            }
+
+            .menu-row h3 {
+                font-size: 23px;
+            }
+
+            .menu-row p {
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="full-menu-page">
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header class="menu-page-header">
+
+        <div class="section-label">
+            THE MOCAMBO TABLE
+        </div>
+
+        <h1>
+            A menu<br>
+            <em>worth remembering.</em>
+        </h1>
+
+        <p>
+            Since 1956, Mocambo has served Kolkata with timeless
+            Continental, Italian, Indian and seafood classics.
+            Explore the dishes that have made the house legendary.
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         PARTY COMBOS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Party Combos</h2>
+            <span>FOR TWO</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div>
+                <h3>Non Veg Date Night Combo</h3>
+                <p>
+                    Mutton Seekh Kebab, Chicken Bharta, 2 Butter Naan,
+                    Cream Caramel & Lemon Iced Tea.
+                </p>
+            </div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div>
+                <h3>Veg Date Night Combo</h3>
+                <p>
+                    Paneer Tikka, Dal Makhani, Peas Pulao,
+                    Cream Caramel & Lemon Iced Tea.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HOUSE SPECIALS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>House Specials</h2>
+            <span>CHEF SPECIAL</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div>
+                <h3>Chicken Paprika</h3>
+                <p>Juicy chicken simmered in a rich paprika-infused sauce.</p>
+            </div>
+            <span class="menu-row-price">₹495</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div>
+                <h3>Fish Florentine</h3>
+                <p>Bhetki steak baked with cheese sauce and chopped spinach.</p>
+            </div>
+            <span class="menu-row-price">₹540</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div>
+                <h3>Pork Cutlet</h3>
+                <p>Stuffed with ham and cheese, served with aioli sauce.</p>
+            </div>
+            <span class="menu-row-price">₹530</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div>
+                <h3>Chicken Supreme</h3>
+                <p>Marinated chicken and ham cooked in sherry and baked.</p>
+            </div>
+            <span class="menu-row-price">₹495</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         STARTERS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Starters & Appetizers</h2>
+            <span>COCKTAILS · HORS D'OEUVRES</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Deviled Crab</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Pepper Crab Devilled</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Chicken Meuniere</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Almost Famous</h3><p>Fried prawns.</p></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Hawks Bay Prawns Cocktail</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Greek Drunken Prawns</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Chilli Fish</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Chilli Chicken</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Mushroom Garlic Prawns</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Chicken Cocktail Sausage</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">11</span>
+            <div><h3>Spinach & Cheese Pillows</h3></div>
+            <span class="menu-row-price">₹345</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">12</span>
+            <div><h3>Spicy Tuna Fish Dip</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">13</span>
+            <div><h3>Chilli Paneer</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">14</span>
+            <div><h3>Chilli Prawns</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">15</span>
+            <div><h3>Chilli Baby Corn</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">16</span>
+            <div><h3>Bolognese Pillows</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">17</span>
+            <div><h3>Chilli Potato</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">18</span>
+            <div><h3>Chilli Cheese Poppers</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">19</span>
+            <div><h3>Cecils Jazzed</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">20</span>
+            <div><h3>Crab Meat Cocktail</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">21</span>
+            <div><h3>Bacon & Cheese Poppers</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">22</span>
+            <div><h3>Ham & Cheese Pillows</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">23</span>
+            <div><h3>Chicken Golden Fry Drums</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOUPS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Soups</h2>
+            <span>WARM BEGINNINGS</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Cream of Crab Meat Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Cream of Spring Chicken Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Cream of Mushroom Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>House Special Mulligatawny Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Cream of Veg Sweet Corn Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Cream of Asparagus Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Cream of Tomato Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Minestrone Italienne Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Cream of Sweet Corn Soup</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Cream of Crab Meat Sweet Corn Soup</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SNACKS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Snacks & Chaat</h2>
+            <span>QUICK BITES</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Fish Finger</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Finger Chips</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SEAFOOD
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Seafood</h2>
+            <span>FROM THE SEA</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Bhetki Bell Meuniere</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Fish A La Diana</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Lobster Thermidor</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Like a Neat Fish</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div>
+                <h3>Fish A La Moutarde</h3>
+            </div>
+            <span class="menu-row-price">₹555</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div>
+                <h3>Bhetki Belle Helen</h3>
+            </div>
+            <span class="menu-row-price">₹580</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div>
+                <h3>Fish Wellington</h3>
+            </div>
+            <span class="menu-row-price">₹550</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Pan Grilled Deep River Bhetki</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Prawns Thermidor</h3></div>
+            <span class="menu-row-price">₹570</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Bhetki Filipino</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">11</span>
+            <div><h3>Prawns Bell Meuniere</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">12</span>
+            <div><h3>Bhetki Newburg</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">13</span>
+            <div><h3>Tuna Fish Crepes</h3></div>
+            <span class="menu-row-price">₹555</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">14</span>
+            <div><h3>Prawns Newburg</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MEATS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Meats & Poultry</h2>
+            <span>CLASSIC CUTS</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Mutton Cutlet</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Chicken Cutlet</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Roasted Chicken</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Fried Chicken</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ITALIAN
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>From Our Italian Kitchen</h2>
+            <span>ITALIAN CLASSICS</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Chicken Tetrazzini</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Spaghetti Bolognaise</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Meat Lasagne</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Spaghetti Carbonara</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Spaghetti with Meatballs</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Chicken Piccata</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Chicken Parmigiana</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Spaghetti in Tomato Sauce</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Mushroom & Potato Lasagne</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Vegetable Lasagne</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">11</span>
+            <div><h3>Macaroni Cheese Casserole</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RISOTTOS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Risottos</h2>
+            <span>HOUSE MADE</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Risotto with Chicken, Bacon, Ham & Mushroom</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Risotto Di Scampi</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Mixed Meat Risotto</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Golden Corn & Cheese Risotto</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Asparagus & Mushroom Risotto</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Risotto Alla Parmigiana</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Mix Vegetable Risotto</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Risotto Alla Sbirraglia Red Sauce</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTINENTAL VEGETARIAN
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Continental Vegetarian</h2>
+            <span>VEGETARIAN SPECIALITIES</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Vegetable Au Gratin</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Vegetable Tetrazzini</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Vegetable Cannelloni</h3></div>
+            <span class="menu-row-price">₹400</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Vegetable Florentine</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Vegetable Surprise</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Vegetable Cutlet</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Mushroom Crepes</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Spinach Corn & Cheese Crepes</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Asparagus Crepes</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Asparagus Au Gratin</h3></div>
+            <span class="menu-row-price">₹455</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">11</span>
+            <div><h3>Corn Persiani</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">12</span>
+            <div><h3>Corn Au Gratin</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">13</span>
+            <div><h3>Baby Corn Florentine</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">14</span>
+            <div><h3>Vegetable Persiani</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">15</span>
+            <div><h3>Broccolli Corn Gratin</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">16</span>
+            <div><h3>Vegetable A La Kiev</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GRILL
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Mocambo's Grill</h2>
+            <span>SIZZLER SPECIALITIES</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Chicken Steak</h3><p>Served with mushroom sauce.</p></div>
+            <span class="menu-row-price">₹470</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Fish Steak</h3></div>
+            <span class="menu-row-price">₹550</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Irish Chateaubriand Beef Steak</h3></div>
+            <span class="menu-row-price">₹555</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Mixed Grilled A La Mocambo</h3></div>
+            <span class="menu-row-price">₹540</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Chicken Chipolata</h3></div>
+            <span class="menu-row-price">₹520</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Minced Pork Steak</h3></div>
+            <span class="menu-row-price">₹545</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Chateaubriand Beef Steak</h3></div>
+            <span class="menu-row-price">₹555</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Mutton Hamburger Steak</h3></div>
+            <span class="menu-row-price">₹580</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Surf and Turf</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Vegetable Steak</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COLD BUFFET & SALADS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Cold Buffet & Salads</h2>
+            <span>FRESH & COLD</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Cold Chicken Salad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Cold Chicken & Ham Salad</h3></div>
+            <span class="menu-row-price">₹480</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Russian Salad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Chicken Mayonnaise Salad</h3></div>
+            <span class="menu-row-price">₹500</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Fresh Salad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Fresh Kachumber Salad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Potato Salad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Corn & Cheese Salad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Prawns Mayonnaise Salad</h3></div>
+            <span class="menu-row-price">₹570</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Fish Mayonnaise Salad</h3></div>
+            <span class="menu-row-price">₹555</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MOGLAI
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Moglai</h2>
+            <span>INDIAN CLASSICS</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Chicken Bharta</h3></div>
+            <span class="menu-row-price">₹400</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Nalli Gosht Dry</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Chicken Butter Masala</h3></div>
+            <span class="menu-row-price">₹400</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Chicken Kabab Masala</h3></div>
+            <span class="menu-row-price">₹450</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Murgh Musallam</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Keema Curry</h3></div>
+            <span class="menu-row-price">₹430</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Malai Kofta</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Paneer Butter Masala</h3></div>
+            <span class="menu-row-price">₹365</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Dal Makhani</h3></div>
+            <span class="menu-row-price">₹320</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Prawns Malai Curry</h3></div>
+            <span class="menu-row-price">₹520</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">11</span>
+            <div><h3>Chicken Reshmi Butter Masala</h3></div>
+            <span class="menu-row-price">₹450</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">12</span>
+            <div><h3>Fish Masala</h3></div>
+            <span class="menu-row-price">₹520</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">13</span>
+            <div><h3>Matar Paneer</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">14</span>
+            <div><h3>Saag Paneer</h3></div>
+            <span class="menu-row-price">₹350</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">15</span>
+            <div><h3>Chana Masala</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">16</span>
+            <div><h3>Vegetable Korma</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">17</span>
+            <div><h3>Vegetable Begum Bahar</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">18</span>
+            <div><h3>Aloo Matar</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">19</span>
+            <div><h3>Aaj Ki Special Sabzi</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">20</span>
+            <div><h3>Egg Curry</h3></div>
+            <span class="menu-row-price">₹325</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">21</span>
+            <div><h3>Kadhai Murgh</h3></div>
+            <span class="menu-row-price">₹405</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">22</span>
+            <div><h3>Chicken Do Pyaza</h3></div>
+            <span class="menu-row-price">₹380</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">23</span>
+            <div><h3>Chicken Saag</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">24</span>
+            <div><h3>Chicken Curry</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">25</span>
+            <div><h3>Prawns Butter Masala</h3></div>
+            <span class="menu-row-price">₹525</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAY WE SUGGEST
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>May We Suggest</h2>
+            <span>HOUSE RECOMMENDATION</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div>
+                <h3>Stuffed Tandoori Chicken</h3>
+                <p>
+                    Tandoori chicken stuffed with vegetables
+                    and baked in creamy tomato gravy.
+                </p>
+            </div>
+            <span class="menu-row-price">₹675</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TANDOOR
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Tandoor</h2>
+            <span>FROM THE CLAY OVEN</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Chicken Reshmi Kabab</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Tandoori Fish</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Tandoori Chicken</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Chicken Tikka Kabab</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Tandoori Prawns</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Paneer Tikka</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Vegetable Seekh Kabab</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Kabuli Naan</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Garlic Naan</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Plain Naan</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">11</span>
+            <div><h3>Butter Naan</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">12</span>
+            <div><h3>Paratha</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">13</span>
+            <div><h3>Tandoori Roti</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">14</span>
+            <div><h3>Tandoori Masala Kulcha</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">15</span>
+            <div><h3>Mutton Seekh Kabab</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">16</span>
+            <div><h3>Cheese Kulcha</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">17</span>
+            <div><h3>Masala Tandoori Kulcha</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">18</span>
+            <div><h3>Papad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">19</span>
+            <div><h3>Masala Papad</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">20</span>
+            <div><h3>Tandoori Mixed Grilled</h3></div>
+            <span class="menu-row-price">₹540</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PULAO
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Pulao & Rice</h2>
+            <span>THE CLASSICS</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Fish Biryani</h3></div>
+            <span class="menu-row-price">₹485</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Chicken Biryani</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Mutton Biryani</h3></div>
+            <span class="menu-row-price">₹380</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Mixed Fried Rice</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Chicken Fried Rice</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Prawns Fried Rice</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Peas Pulao</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Plain Pulao</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div>
+                <h3>Vegetable Fried Rice</h3>
+            </div>
+            <span class="menu-row-price">₹300</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RAITA
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Raita</h2>
+            <span>TO ACCOMPANY</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Pineapple Raita</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Aloo Raita</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Kheera Raita</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Onion Raita</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DESSERTS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>The Proof of the Pudding</h2>
+            <span>SWEET ENDINGS</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Cream Caramel</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Fruit Salad & Cream</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Cherries & Cream</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DRINKS
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Drinks</h2>
+            <span>REFRESHMENTS</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Virgin Mojito</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Virgin Mary</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Cold Coffee</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">04</span>
+            <div><h3>Pineapple Blossom</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">05</span>
+            <div><h3>Orange Blossom</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">06</span>
+            <div><h3>Strawberry Blossom</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">07</span>
+            <div><h3>Strawberry Crush</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">08</span>
+            <div><h3>Lemon Iced Tea</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">09</span>
+            <div><h3>Lassi</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">10</span>
+            <div><h3>Fresh Lime Water</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MILKSHAKES
+    ========================= -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-header">
+            <h2>Milkshakes</h2>
+            <span>THICK · COLD · CLASSIC</span>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">01</span>
+            <div><h3>Vanilla Milkshake</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">02</span>
+            <div><h3>Strawberry Milkshake</h3></div>
+        </div>
+
+        <div class="menu-row">
+            <span class="menu-row-number">03</span>
+            <div><h3>Chocolate Milkshake</h3></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BACK
+    ========================= -->
+
+    <a href="index.html#menu" class="menu-page-back">
+        ← BACK TO MOCAMBO
+    </a>
+
+</main>
+</body>
+
+</html>
